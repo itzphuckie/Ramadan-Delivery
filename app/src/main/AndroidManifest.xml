@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.paylessgrocery20">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_payless_grocery"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_payless_grocery"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activities.RecorderActivity"></activity>
+        <activity android:name=".activities.RCActivity" />
+        <activity android:name=".activities.DefaultMusicActivity" />
+        <activity android:name=".activities.SplashEndActivity" />
+        <activity android:name=".activities.FavoriteActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDXOWtwj_44ab5-HibtV60M18B3VxlLgBU" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.geo.API_KEY" -->
+        <!-- android:value="@string/google_maps_key" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activities.CheckOutNearByStoreMapActivity" -->
+        <!-- android:label="@string/title_activity_check_out_near_by_store_map"></activity> -->
+        <activity android:name=".activities.ThankYouActivity" />
+        <activity android:name=".activities.MethodPaymentActivity" />
+        <activity android:name=".activities.MethodShippingActivity" />
+        <activity android:name=".activities.OrderActivity" />
+        <activity android:name=".activities.OrderConfirmedActivity" />
+        <activity android:name=".activities.RequestPasswordActivity" />
+        <activity android:name=".activities.UpdateAccountActivity" />
+        <activity android:name=".activities.RewardActivity" />
+        <activity android:name=".activities.UpdatePaymentActivity" />
+        <activity android:name=".activities.UpdateAddressActivity" />
+        <activity android:name=".activities.UpdatePassActivity" />
+        <activity android:name=".activities.UpdateProfileActivity" />
+        <activity android:name=".activities.SettingActivity" />
+        <activity android:name=".activities.MyAccountActivity" />
+        <activity android:name=".activities.CheckoutConfirmationActivity" />
+        <activity android:name=".activities.CheckoutShippingActivity" />
+        <activity android:name=".activities.CartActivity" />
+        <activity android:name=".activities.CheckoutPaymentActivity" />
+        <activity android:name=".activities.ProductActivity" />
+        <activity android:name=".activities.SubCategoryActivity" />
+        <activity android:name=".activities.CategoryActivity" />
+        <activity android:name=".activities.RegisterActivity" />
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.MainActivity" />
+        <service android:name=".service.MediaPlayerService"/>
+    </application>
+
+
+
+</manifest>

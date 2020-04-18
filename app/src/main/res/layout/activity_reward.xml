@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout = "@layout/app_bar" />
+
+    <TextView
+        android:layout_marginTop="150dp"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/tool_bar"
+        android:id="@+id/text_view_reward"
+        android:text="Earn 30 more poitns for 5 dollars coupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <SeekBar
+        android:layout_below="@id/text_view_reward"
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:max="100"
+        android:min="0" />
+    <TextView
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/seekBar"
+        android:id="@+id/text_view_reward_2"
+        android:text="Subscribe and buy for delivery credits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <SeekBar
+        android:layout_below="@id/text_view_reward_2"
+        android:id="@+id/seekBar_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:max="100"
+        android:min="0" />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/seekBar_2"
+        android:id="@+id/text_view_reward_3"
+        android:text="Earn 30 more points to reach Payless MVP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <SeekBar
+        android:layout_below="@id/text_view_reward_3"
+        android:id="@+id/seekBar_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:max="100"
+        android:min="0" />
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <include layout="@layout/app_bar" />
+    <LinearLayout
+        android:layout_above="@+id/nav_bottom_view"
+        android:layout_below="@+id/tool_bar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <Button
+            android:id="@+id/button_update_account"
+            android:layout_marginTop="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_button"
+            android:text="Update Profile"/>
+        <Button
+            android:id="@+id/button_update_pass"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_button"
+            android:text="Update Password"/>
+        <Button
+            android:id="@+id/button_update_address"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_button"
+            android:text="Update Address"/>
+        <Button
+            android:id="@+id/button_update_payment"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_button"
+            android:text="Update payment"/>
+    </LinearLayout>
+
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/nav_bottom_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:menu="@menu/navigation"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        app:itemBackground="@color/colorPrimary"-->
+<!--        app:itemIconTint="@color/colorWhite"-->
+<!--        app:itemTextColor="@color/colorWhite"-->
+<!--        >-->
+<!--    </com.google.android.material.bottomnavigation.BottomNavigationView>-->
+
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <include layout="@layout/app_bar" />
+    <LinearLayout
+        android:layout_below="@+id/tool_bar"
+        android:layout_above="@+id/nav_bottom_view"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+        <LinearLayout
+            android:layout_marginTop="250dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="150dp"
+                android:textStyle="bold"
+                android:text="Payment Type"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/edit_text_payment_type"
+                android:hint="VISA/CREDIT/DEBIT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="150dp"
+                android:textStyle="bold"
+                android:text="Card Number"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/edit_text_new_card_number"
+                android:hint="Enter 16 digit card numbers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="150dp"
+                android:textStyle="bold"
+                android:text="Expiration Date"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/edit_text_new_expiration_date"
+                android:hint="Enter as 01/20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="150dp"
+                android:textStyle="bold"
+                android:text="VIN"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/edit_text_new_VIN"
+                android:hint="Enter 3 digits number VIN "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+        <Button
+            android:layout_marginBottom="10dp"
+            android:id="@+id/button_update_payment_info"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/layout_button"
+            android:text="Update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</RelativeLayout>

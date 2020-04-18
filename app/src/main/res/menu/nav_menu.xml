@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_account_box_black_24dp"
+            android:title="Profile"/>
+        <item
+            android:id="@+id/nav_view_cart"
+            android:icon="@drawable/ic_card_giftcard_black_24dp"
+            android:title="Purchase History"/>
+        <item
+            android:id="@+id/nav_promotion"
+            android:icon="@drawable/ic_attach_money_black_24dp"
+            android:title="Ramadan Calendar"/>
+    </group>
+
+
+    <item android:title="Account Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_update"
+                android:icon="@drawable/ic_edit_black_24dp"
+                android:title="Update Profile"/>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_sign_out"
+                android:title="Sign Out"/>
+        </menu>
+    </item>
+</menu>

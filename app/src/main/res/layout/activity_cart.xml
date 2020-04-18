@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/app_bar" />
+
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_below="@+id/tool_bar"
+        android:id="@+id/interface_cart_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Your cart is empty !"
+            android:textSize="26dp" />
+        <Button
+            android:id="@+id/button_cart_to_category"
+            android:text="Back To Shopping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/layout_button"
+            android:layout_marginBottom="15dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/interface_cart_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool_bar">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/interface_cart_view_bottom"
+            android:layout_below="@+id/tool_bar">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_cart"
+                style="@style/RecyclerView" />
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:weightSum="5"-->
+<!--                    android:padding="15dp">-->
+<!--                    <TextView-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:text="Order Summary"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginBottom="15dp"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"/>-->
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:weightSum="2"-->
+<!--                        >-->
+<!--                        <TextView-->
+<!--                            android:id="@+id/text_view_total_mrp_static"-->
+<!--                            android:text="Total: "-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"/>-->
+<!--                        <TextView-->
+<!--                            android:gravity="end"-->
+<!--                            android:id="@+id/text_view_total_mrp"-->
+<!--                            android:text="$21"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"/>-->
+<!--                    </LinearLayout>-->
+
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:weightSum="2"-->
+<!--                        >-->
+<!--                        <TextView-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:id="@+id/text_view_total_price_static"-->
+<!--                            android:text="Payless Price: "-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"/>-->
+<!--                        <TextView-->
+<!--                            android:gravity="end"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:id="@+id/text_view_total_price"-->
+<!--                            android:text="$20"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"/>-->
+<!--                    </LinearLayout>-->
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:weightSum="2">-->
+<!--                        <TextView-->
+<!--                            android:id="@+id/text_view_tax_static"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:text="Tax: "-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"/>-->
+<!--                        <TextView-->
+<!--                            android:gravity="end"-->
+<!--                            android:id="@+id/text_view_tax"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:text="0.02"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"/>-->
+<!--                    </LinearLayout>-->
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:weightSum="2">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/text_view_subtotal_static"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:text="Subtotal"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"/>-->
+
+<!--                        <TextView-->
+<!--                            android:gravity="end"-->
+<!--                            android:id="@+id/text_view_subtotal"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:text="$20"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"/>-->
+<!--                    </LinearLayout>-->
+
+<!--                </LinearLayout>-->
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <LinearLayout
+            android:padding="15dp"
+            android:id="@+id/interface_cart_view_bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_sub_total_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:text="Total Saving: $ 777"
+                android:textColor="@color/colorPop" />
+            <Button
+                android:id="@+id/button_checkout_cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_button"
+                android:text="Proceed to Checkout"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+
+    </RelativeLayout>
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:layout_below="@+id/interface_cart_view_bottom"-->
+<!--        android:id="@+id/nav_bottom_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:menu="@menu/navigation"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        app:itemBackground="@color/colorPrimary"-->
+<!--        app:itemIconTint="@color/colorWhite"-->
+<!--        app:itemTextColor="@color/colorWhite"-->
+<!--        >-->
+<!--    </com.google.android.material.bottomnavigation.BottomNavigationView>-->
+
+</RelativeLayout>

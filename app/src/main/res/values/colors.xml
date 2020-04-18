@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FFA500</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorPop">#FF007F</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorButtonOnClick"> #A9A9A9</color>
+
+    <color name="toolBar">#1C2833</color>
+    <color name="tableTitle">#1B2631  </color>
+    <color name="tableTitleText">#45B39D </color>
+    <color name="tableNormal">#212F3D  </color>
+    <color name="tableSelected">#229954 </color>
+</resources>

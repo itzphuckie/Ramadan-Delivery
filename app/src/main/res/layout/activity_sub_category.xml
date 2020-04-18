@@ -1,0 +1,37 @@
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout = "@layout/app_bar" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_below="@+id/tool_bar"
+        android:id="@+id/tab_layout_sub_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        android:background="@color/colorPrimaryDark"
+        app:tabTextColor="@color/colorWhite"
+        />
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@+id/tab_layout_sub_category"
+        android:id="@+id/view_pager_sub_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nav_bottom_view"/>
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/nav_bottom_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:menu="@menu/navigation"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        app:itemBackground="@color/colorPrimary"-->
+<!--        app:itemIconTint="@color/colorWhite"-->
+<!--        app:itemTextColor="@color/colorWhite"-->
+<!--        >-->
+<!--    </com.google.android.material.bottomnavigation.BottomNavigationView>-->
+</RelativeLayout>

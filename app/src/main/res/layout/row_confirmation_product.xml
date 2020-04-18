@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/image_view_product_cart_confirmation"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_launcher_background" />
+
+    <LinearLayout
+        android:id="@+id/interface_product_information_confirmation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/image_view_product_cart_confirmation"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_product_name_cart_confirmation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_product_price_cart_confirmation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 100"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_view_product_mrp_cart_confirmation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 120"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/text_view_product_save_cart_confirmation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="$ 20"
+                android:textColor="@color/colorPop"
+                android:textSize="14dp"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/ratingbar_product_confirmation"
+        style="@style/producRatingBarSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/interface_product_information_confirmation"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/image_view_product_cart_confirmation"
+        android:background="@color/colorWhite"
+        android:numStars="5"
+        android:rating="4.5"
+        android:scaleX=".5"
+        android:scaleY=".5"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp" />
+
+    <TextView
+        android:id="@+id/text_view_product_quantity_confirmation"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/interface_product_information_confirmation"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text="X 10"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

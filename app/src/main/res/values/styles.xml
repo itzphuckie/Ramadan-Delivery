@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="producRatingBarSmall"
+        parent="android:style/Widget.Material.RatingBar.Small">
+    </style>
+
+    <style name="productRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingstars</item>
+        <item name="android:minHeight">24dip</item>
+        <item name="android:maxHeight">24dip</item>
+    </style>
+
+    <style name="company_Payless">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">45dp</item>
+        <item name="android:layout_marginBottom">30dp</item>
+        <item name="android:textSize">37dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name = "android:textStyle">italic</item>
+
+    </style>
+    <style name="company_Groceries">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">45dp</item>
+        <item name="android:layout_marginBottom">30dp</item>
+        <item name="android:textSize">37dp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name = "android:textStyle">italic</item>
+
+    </style>
+
+    <style name="RecyclerView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+</resources>

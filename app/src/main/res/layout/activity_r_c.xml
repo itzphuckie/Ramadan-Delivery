@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/toolBar"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_above="@id/ad_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/app_bar" />
+
+        <LinearLayout
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/tableTitle"
+            android:orientation="horizontal"
+
+
+            android:weightSum="7">
+
+            <TextView
+                android:id="@+id/sequence_number_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="#"
+                android:textStyle="bold"
+                android:textColor="@color/tableTitleText"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/date_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="Date"
+                android:textStyle="bold"
+                android:textColor="@color/tableTitleText"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/sehr_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="Sehr"
+                android:textStyle="bold"
+                android:textColor="@color/tableTitleText"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/iftar_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="Iftar"
+                android:textStyle="bold"
+                android:textColor="@color/tableTitleText"
+                android:textSize="22dp" />
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="2dp"
+            android:id="@+id/table_items_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ad_layout"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        >
+
+<!--        <WebView-->
+<!--            android:id="@+id/webview"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_centerInParent="true" />-->
+<!--        <ImageView-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:src="@drawable/giphy_withoutbackgroud"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            />-->
+
+        <Button
+            android:id="@+id/detail_button"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/layout_button"
+            android:text="Detail ->"
+            android:textAllCaps="false"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12dp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
