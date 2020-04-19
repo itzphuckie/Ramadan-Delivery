@@ -2,15 +2,19 @@ package com.example.paylessgrocery20.activities
 
 import android.content.Context
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.telephony.SmsManager
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
 import androidx.annotation.RequiresApi
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.android.volley.Request
@@ -45,7 +49,7 @@ class CheckoutConfirmationActivity : AppCompatActivity(){
 
 
     lateinit var appExecutors: AppExecutors
-
+    lateinit var smsManager: SmsManager
     // Firabase
     lateinit var firebaseDatabase: FirebaseDatabase
     lateinit var databaseReference: DatabaseReference
@@ -98,6 +102,7 @@ class CheckoutConfirmationActivity : AppCompatActivity(){
         city = sharePref.getString("city","").toString()
         zipcode = sharePref.getString("zipcode","").toString()
         phone = sharePref.getString("phone","").toString()
+        text_view_address_name.text = nameShip
         text_view_address_confirmation.text = address + " " + city + " " + state + " " + zipcode
         text_view_billing_address.text = address + " " + city + " " + state + " " + zipcode
 
@@ -197,6 +202,7 @@ class CheckoutConfirmationActivity : AppCompatActivity(){
             editor.apply()
             //intent.putExtra("orderID",orderID)
             sendEmail()
+            setUpPermissionSendSMS()
             startActivity(intent)
             finish()
         }
@@ -243,7 +249,8 @@ class CheckoutConfirmationActivity : AppCompatActivity(){
                  */
                 //Creating MimeMessage object
                 val mm = MimeMessage(session)
-                val emailId = "ccckitten@icloud.com"
+                //val emailId = "ccckitten@icloud.com"
+                val emailId = "makansari.android@gmail.com"
                 //Setting sender address
                 mm.setFrom(InternetAddress(Credentials.EMAIL))
                 //Adding receiver
@@ -269,6 +276,53 @@ class CheckoutConfirmationActivity : AppCompatActivity(){
                 e.printStackTrace()
             }
         }
+
     }
 
+    /**
+     * Describing sending SMS
+     */
+
+    private fun setUpPermissionSendSMS() {
+        val permission = ContextCompat.checkSelfPermission(
+            this,android.Manifest.permission.SEND_SMS
+        )
+
+        if(permission == PackageManager.PERMISSION_DENIED){
+            requestSMSPermission()
+        }else{
+            sendSMS()
+        }
+
+    }
+
+    private fun requestSMSPermission() {
+        ActivityCompat.requestPermissions(this, arrayOf(android.Manifest.permission.SEND_SMS),100)
+    }
+
+
+    /**
+     * Set the phone number (countrycode + phone number)
+     */
+    fun sendSMS(){
+        var textBody = "Order For: $nameShip " +", Order Name: " +  nameShip + "   " + ", Phone Number: $phone" + "   "+ ", Shipping Address" + " $address + $city + $state + $zipcode " + "   "+ ", Order Detail: $mList"
+        smsManager = SmsManager.getDefault()
+        smsManager.sendTextMessage("7146032711",null,textBody,null,null)
+
+    }
+
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
+        when (requestCode){
+            100 ->
+                if(grantResults.isEmpty() || grantResults[0]!= PackageManager.PERMISSION_GRANTED){
+                    Toast.makeText(applicationContext, "Permission Denied", Toast.LENGTH_SHORT).show()
+                }else{
+                    sendSMS()
+                }
+        }
+    }
 }

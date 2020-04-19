@@ -42,7 +42,7 @@ class CategoryActivity : AppCompatActivity(), AdapterCategory.OnAdapterClickList
     NavigationView.OnNavigationItemSelectedListener {
     lateinit var adapterCategory: AdapterCategory
     var categoryList: ArrayList<Category> = ArrayList()
-    var productList: ArrayList<Product> = ArrayList()
+    //var productList: ArrayList<Product> = ArrayList()
     lateinit var auth : FirebaseAuth
     override fun onBackPressed() {
         //super.onBackPressed()
@@ -128,7 +128,7 @@ class CategoryActivity : AppCompatActivity(), AdapterCategory.OnAdapterClickList
         setupToolbar()
         //setBottomNavigation()
         adapterCategory = AdapterCategory(this, categoryList)
-        recycler_view_category.layoutManager = GridLayoutManager(this, 2) as RecyclerView.LayoutManager?
+        recycler_view_category.layoutManager = GridLayoutManager(this, 2)
         recycler_view_category.adapter = adapterCategory
         adapterCategory.setOnAdapterClickListner(this)
     }
@@ -136,6 +136,7 @@ class CategoryActivity : AppCompatActivity(), AdapterCategory.OnAdapterClickList
     override fun onItemClicked(position: Int) {
         var intent = Intent(this, SubCategoryActivity::class.java)
         intent.putExtra("Category", categoryList[position])
+        Log.d("CatID",categoryList[position].toString())
         startActivity(intent)
     }
 

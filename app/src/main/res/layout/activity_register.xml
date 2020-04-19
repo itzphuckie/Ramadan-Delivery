@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
     android:orientation="vertical"
     android:padding="30dp"
    >
@@ -16,53 +15,35 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
-            android:src="@drawable/logo_payless_grocery"
+            android:src="@drawable/ramadan_logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </LinearLayout>
-<!--    <TextView-->
-<!--        style="@style/company_Payless"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:layout_marginTop="120dp"-->
-<!--        android:text="Payless" />-->
 
-<!--    <TextView-->
-<!--        style="@style/company_Groceries"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:layout_marginTop="-35dp"-->
-<!--        android:text="Groceries" />-->
 
     <EditText
         android:layout_marginTop="20dp"
         android:id="@+id/register_name"
         android:hint="Enter name"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#fff"
         android:layout_alignParentLeft="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <EditText
-        android:textColorHint="#FFF"
         android:id="@+id/register_email"
         android:hint="Enter email"
-        android:textColor="#FFFFFF"
         android:layout_alignParentLeft="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <EditText
-        android:textColorHint="#FFF"
         android:id="@+id/register_password"
         android:hint="Enter password"
-        android:textColor="#FFFFFF"
         android:layout_alignParentLeft="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"/>
     <EditText
-        android:textColorHint="#FFF"
         android:id="@+id/register_mobile"
         android:hint="Enter phone"
-        android:textColor="#FFFFFF"
         android:layout_alignParentLeft="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -81,7 +62,6 @@
         android:id="@+id/already_register_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorWhite"
         android:textAlignment="textEnd"
         android:text="Already Register?"
         android:clickable="true"

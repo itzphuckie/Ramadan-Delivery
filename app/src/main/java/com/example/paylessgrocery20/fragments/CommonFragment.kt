@@ -50,7 +50,6 @@ class CommonFragment : Fragment(), AdapterProduct.OnAdapterClickListener {
         dbHelper = DBHelper(context!!)
         arguments?.let {
             param1 = it.getInt("SubID")
-
         }
     }
 
@@ -68,7 +67,7 @@ class CommonFragment : Fragment(), AdapterProduct.OnAdapterClickListener {
                 productList = proList.data
                     //view?.drop_down_spinner_sort?.setOnItemClickListener{
                 option = view?.findViewById(R.id.drop_down_spinner_sort) as Spinner
-                val sortMethods = arrayOf("Price ( Low - High )", "Price ( High - Low)", "Name ( A - Z )")
+                val sortMethods = arrayOf("Price ( L - H )", "Price ( H - L)", "Name ( A - Z )")
                 option.adapter = ArrayAdapter<String>(
                     activity!!,
                     android.R.layout.simple_list_item_1,

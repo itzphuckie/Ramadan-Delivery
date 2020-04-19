@@ -43,6 +43,7 @@ class SubCategoryActivity : AppCompatActivity(),CommonFragment.OnFragmentInterac
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sub_category)
         var category = intent.getSerializableExtra("Category") as Category
+        Log.d("CatID",category.catId.toString())
         var catId = category.catId
         //var catId = intent.getIntExtra("CatID",0)
         setupToolbar(catId)
