@@ -109,15 +109,7 @@ class CheckoutConfirmationActivity : AppCompatActivity(){
         // For Order Summary
         var sharePrefOrderSummary = getSharedPreferences("orderSummary", Context.MODE_PRIVATE)
         totalAmount = sharePrefOrderSummary.getString("totalAmount","").toString()
-//        ourPrice = sharePrefOrderSummary.getString("ourPrice","").toString()
-//        discount  = sharePrefOrderSummary.getString("discount","").toString()
-//        orderAmount = sharePrefOrderSummary.getString("orderAmount","").toString()
-//        text_view_total_price_confirm.text = "$ "+ ourPrice
-//        text_view_delivery_confirm.text = deliveryCharges
-//        totalAmount = (totalAmount.toDouble() + deliveryCharges.toDouble()).toFloat().toString()
-//        text_view_subtotal_confirm.text ="$ "+  totalAmount
-
-        text_view_total_save_cart_confirm.text = "Total Saving: $ " + totalAmount
+        text_view_total_save_cart_confirm.text = "Total Payment: $ " + totalAmount
 
 
         // FOr user ID

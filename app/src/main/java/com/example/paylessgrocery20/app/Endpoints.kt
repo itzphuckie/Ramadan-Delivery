@@ -8,7 +8,7 @@ class Endpoints {
         private const val URL_REGISTER = "auth/register"
         private const val URL_CATEGORY = "category"
         private const val URL_SUBCATEGORY = "subcategory/"
-        private const val URL_PRODUCT = "products/"
+        private const val URL_PRODUCT = "products/sub/"
 
         fun getLogin():String{
             return Config.BASE_URL + URL_LOGIN

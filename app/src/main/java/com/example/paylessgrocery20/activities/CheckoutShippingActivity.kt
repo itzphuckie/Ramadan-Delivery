@@ -25,16 +25,6 @@ class CheckoutShippingActivity : AppCompatActivity() {
     var notEmpty = true
     var phone = ""
 
-//    var oldName = ""
-//    var oldAddress = ""
-//    var oldCity = ""
-//    var oldState = ""
-//    var oldZipcode = ""
-//    var orderID = ""
-//    var shipList: ArrayList<ShippingAddress> ?= null
-//    lateinit var firebaseDatabase: FirebaseDatabase
-//    lateinit var databaseReference: DatabaseReference
-//    var shippingAddress: ShippingAddress? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_checkout_shipping)
@@ -51,10 +41,6 @@ class CheckoutShippingActivity : AppCompatActivity() {
         if (edit_Text_address.text.toString().isEmpty()) {
             notEmpty = false
             Toast.makeText(this, "Address cannot be blank", Toast.LENGTH_SHORT).show()
-        }
-        if (edit_Text_state.text.toString().isEmpty()) {
-            notEmpty = false
-            Toast.makeText(this, "State cannot be blank.", Toast.LENGTH_SHORT).show()
         }
         if (edit_Text_city.text.toString().isEmpty()) {
             notEmpty = false
@@ -79,7 +65,6 @@ class CheckoutShippingActivity : AppCompatActivity() {
             if (checkEditTextValidation()) {
                 address = edit_Text_address.text.toString()
                 city = edit_Text_city.text.toString()
-                state = edit_Text_state.text.toString()
                 zipcode = edit_Text_zipcode.text.toString()
                 name = edit_Text_name.text.toString()
                 phone = edit_Text_phone_address.text.toString()
@@ -108,10 +93,6 @@ class CheckoutShippingActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             android.R.id.home -> finish()
-//            R.id.menuViewCart -> {
-//                var intent2cart = Intent(this, CartActivity::class.java)
-//                startActivity(intent2cart)
-//            }
             R.id.menu_home_1 -> {
                 var intent = Intent(this, CategoryActivity::class.java)
                 startActivity(intent)
