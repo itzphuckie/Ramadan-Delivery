@@ -91,7 +91,7 @@ class RCActivity : AppCompatActivity() {
 //        myList.add(TableItem(8, "Fri 1", "04:30 AM", "07:43PM"))
 //        myList.add(TableItem(9, "Sat 2", "04:32 AM", "07:42PM"))
 //        myList.add(TableItem(10, "Sun 3", "04:30 AM", "07:43PM"))
-        myList.add(TableItem(1, "Fri 24", "04:33 AM", "07:45 PM"))
+        myList.add(TableItem(1, "Fri 24", "04:33 AM", "07:15 PM"))
         myList.add(TableItem(2, "Sat 25", "04:31 AM", "07:46 PM"))
         myList.add(TableItem(3, "Sun 26", "04:29 AM", "07:48 PM"))
         myList.add(TableItem(4, "Mon 27", "04:27 AM", "07:49 PM"))
