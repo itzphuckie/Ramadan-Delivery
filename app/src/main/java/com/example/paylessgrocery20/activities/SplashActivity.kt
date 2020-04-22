@@ -22,7 +22,7 @@ class SplashActivity : AppCompatActivity() {
         var handler = Handler()
         handler.postDelayed({
             checkLogin()
-        },3000)
+        },4000)
     }
 
     private fun checkLogin(){

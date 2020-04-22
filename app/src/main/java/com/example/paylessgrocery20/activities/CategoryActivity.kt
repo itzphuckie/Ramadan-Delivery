@@ -82,10 +82,10 @@ class CategoryActivity : AppCompatActivity(), AdapterCategory.OnAdapterClickList
             R.drawable.ram_4
         )
         val names = arrayListOf<String>(
-            "Ramadan Kareem",
-            "Happy Ramadan",
-            "",
-            "Stay home and shop for food !!!"
+            "Ramadan Kareem  call us @ 9886258189",
+            "Happy Ramadan     call us @ 9886258189",
+            "call us @ 9886258189 ",
+            "Stay home and shop for food !!!   call us @ 9886258189"
         )
         image_banner.setImages(arrayOf)
             .setDelayTime(5000)
@@ -167,7 +167,7 @@ class CategoryActivity : AppCompatActivity(), AdapterCategory.OnAdapterClickList
 
     private fun setupToolbar() {
         toolbar = findViewById(R.id.toolbar)
-        toolbar.title = "Ramzan Delivery"
+        toolbar.title = "Ramzan Delivery "
         setSupportActionBar(toolbar)
         drawerLayout = findViewById(R.id.drawer_layout)
         navView = findViewById(R.id.nav_view)

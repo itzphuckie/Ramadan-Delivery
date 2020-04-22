@@ -1,16 +1,16 @@
 <resources>
-    <string name="app_name">Ramzan Food Court</string>
+    <string name="app_name">Ramzan Food Topia</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
-    <string name="activity_category">Payless Grocery</string>
+    <string name="activity_category">Ramzan Iftar</string>
 
-    <string name="activity_subcategory_1">Beverages</string>
-    <string name="activity_subcategory_2">Dairy</string>
-    <string name="activity_subcategory_3">Fruits and Vegestables</string>
-    <string name="activity_subcategory_4">Bakery</string>
+    <string name="activity_subcategory_1">Chicken Items</string>
+    <string name="activity_subcategory_2">Veg Items</string>
+    <string name="activity_subcategory_3">Fruit Items</string>
+    <string name="activity_subcategory_4">Beef Items</string>
 
 
     <string name="title_signout">Sign Out</string>
