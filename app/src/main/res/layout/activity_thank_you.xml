@@ -17,7 +17,7 @@
             android:id="@+id/text_view_ty_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Thank you for your order!"
+            android:text="Thank you for your order! "
             android:gravity="center"
             android:textStyle="bold"
             android:textColor="@color/colorAccent"
@@ -42,10 +42,11 @@
         <TextView
             android:layout_centerInParent="true"
             android:layout_marginTop="10dp"
-            android:text="You will receive an email confirmation shortly."
+            android:text="You will receive a order confirmation call shortly."
             android:layout_below="@+id/text_view_thankyou_orderID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+
         <Button
             android:id="@+id/button_thankyou_to_category"
             android:text="Back to Shopping"
