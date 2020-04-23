@@ -38,7 +38,7 @@ class ProductActivity : AppCompatActivity(), ShareFragment.OnFragmentInteraction
     override fun onCreate(savedInstanceState: Bundle?) {
         //var quantityCount:Int = 0
         //updateCartCount()
-        var currency = Currency.getInstance("USD")
+        var currency = Currency.getInstance("INR")
         var symbol = currency.getSymbol()
         var dbHelper = DBHelper(this)
 
