@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.paylessgrocery20">
+    package="com.ramadandelivery.paylessgrocery20">
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -23,11 +23,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activities.RecorderActivity"></activity>
-        <activity android:name=".activities.RCActivity" />
-        <activity android:name=".activities.DefaultMusicActivity" />
-        <activity android:name=".activities.SplashEndActivity" />
-        <activity android:name=".activities.FavoriteActivity" />
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.RecorderActivity"></activity>
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.RCActivity" />
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.DefaultMusicActivity" />
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.SplashEndActivity" />
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.FavoriteActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -46,38 +46,38 @@
         <!-- <activity -->
         <!-- android:name=".activities.CheckOutNearByStoreMapActivity" -->
         <!-- android:label="@string/title_activity_ch eck_out_near_by_store_map"></activity> -->
-        <activity android:name=".activities.ThankYouActivity" />
-        <activity android:name=".activities.MethodPaymentActivity" />
-        <activity android:name=".activities.MethodShippingActivity" />
-        <activity android:name=".activities.OrderActivity" />
-        <activity android:name=".activities.OrderConfirmedActivity" />
-        <activity android:name=".activities.RequestPasswordActivity" />
-        <activity android:name=".activities.UpdateAccountActivity" />
-        <activity android:name=".activities.RewardActivity" />
-        <activity android:name=".activities.UpdatePaymentActivity" />
-        <activity android:name=".activities.UpdateAddressActivity" />
-        <activity android:name=".activities.UpdatePassActivity" />
-        <activity android:name=".activities.UpdateProfileActivity" />
-        <activity android:name=".activities.SettingActivity" />
-        <activity android:name=".activities.MyAccountActivity" />
-        <activity android:name=".activities.CheckoutConfirmationActivity" />
-        <activity android:name=".activities.CheckoutShippingActivity" />
-        <activity android:name=".activities.CartActivity" />
-        <activity android:name=".activities.CheckoutPaymentActivity" />
-        <activity android:name=".activities.ProductActivity" />
-        <activity android:name=".activities.SubCategoryActivity" />
-        <activity android:name=".activities.CategoryActivity" />
-        <activity android:name=".activities.RegisterActivity" />
-        <activity android:name=".activities.LoginActivity" />
-        <activity android:name=".activities.SplashActivity">
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.ThankYouActivity" />
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.MethodPaymentActivity" />
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.MethodShippingActivity" />
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.OrderActivity" />
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.OrderConfirmedActivity" />
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.RequestPasswordActivity" />
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.UpdateAccountActivity" />
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.RewardActivity" />
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.UpdatePaymentActivity" />
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.UpdateAddressActivity" />
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.UpdatePassActivity" />
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.UpdateProfileActivity" />
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.SettingActivity" />
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.MyAccountActivity" />
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.CheckoutConfirmationActivity" />
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.CheckoutShippingActivity" />
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.CartActivity" />
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.CheckoutPaymentActivity" />
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.ProductActivity" />
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.SubCategoryActivity" />
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.CategoryActivity" />
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.RegisterActivity" />
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.LoginActivity" />
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.MainActivity" />
-        <service android:name=".service.MediaPlayerService"/>
+        <activity android:name="com.ramadandelivery.paylessgrocery20.activities.MainActivity" />
+        <service android:name="com.ramadandelivery.paylessgrocery20.service.MediaPlayerService"/>
     </application>
 
 

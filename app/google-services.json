@@ -8,20 +8,12 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:233174821020:android:8482d09d60c60b551b2559",
+        "mobilesdk_app_id": "1:233174821020:android:18e0e6c8641708541b2559",
         "android_client_info": {
-          "package_name": "com.example.paylessgrocery20"
+          "package_name": "com.ramadandelivery.paylessgrocery20"
         }
       },
       "oauth_client": [
-        {
-          "client_id": "233174821020-loi6nme04cjmtmqccctlcosvgcr2p10g.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.paylessgrocery20",
-            "certificate_hash": "006f338d406eed812e50d6bd58cf5d96c50371ea"
-          }
-        },
         {
           "client_id": "233174821020-kjlsaaot2tv00p8hq48llrk1u237os3a.apps.googleusercontent.com",
           "client_type": 3
